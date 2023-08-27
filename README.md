@@ -12,17 +12,17 @@ Welcome to the Learning Hub project! This repository contains a web application 
 
 ## Screenshots
 
-### Student Dashboard
-![Student Dashboard](screenshots/home.png)
+### Home Dashboard
+![Home Dashboard](screenshots/home.png)
 
 ### Learning Materials
-![Learning Materials](screenshots/learning_materials.png)
-
-### Embedded Compiler
-![Embedded Compiler](screenshots/embedded_compiler.png)
+![Learning Materials](screenshots/library.png)
 
 ### Teacher Dashboard
-![Teacher Dashboard](screenshots/teacher_dashboard.png)
+![Embedded Compiler](screenshots/teacher.png)
+
+###Attendance Dashboard
+![Teacher Dashboard](screenshots/attendence.png)
 
 ## Getting Started
 
