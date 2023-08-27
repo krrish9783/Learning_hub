@@ -1,0 +1,186 @@
+<html><title>loginpage6</title>
+<head><style>
+body {
+
+background-image:url('b1.jpg');
+background-size:cover;
+}
+ .div1 {
+   background-image:url('dk1.jpg');
+   background-size:cover;
+   border:5px solid #ddd;
+   border-bottom-color:red;
+   border-left-color:lime;
+   border-right-color:lime;
+   display:block;
+   height:70%;
+   width:50%;
+   margin-left:5%;
+   margin-top:1%;
+   border-radius:13px;
+   
+
+   }
+      h1 {
+	   text-align:center;
+	   color:white;
+	   margin-top:2px;
+	  }
+	  
+	  
+	  input {
+	    height:30px;
+		font-size:20px;
+		}
+	  
+.a {
+  font-size:300%;
+  color:red;
+ box-shadow:5px 5px 500px white;
+ border-radius:13px;
+ border:4px solid white;
+ border-style:groove;
+  }
+.b  {
+ font-size:210%;
+ }
+.c {
+font-size:210%;
+color:lime;
+}
+.d {
+font-size:210%;
+}
+ h2 {
+  font-size:200%;
+  font-family:monospace;
+  color:#ddd;
+  background-color:aqua;
+  border:2px solid white;
+  margin-left:10%;
+margin-right:10%;  
+  border-radius:13px;
+  }
+form {
+position:absolute;
+text-align:center;
+color:pink;
+margin-left:14%;
+margin-top:6%;	
+
+ }
+ 
+ input {
+  border:1px solid white;
+  border-radius:8px;
+  }
+ label {
+  font-size:160%;
+ 
+  }
+  a {
+  color:lime;
+  }
+  a:hover 
+  {
+    color:red;
+	}
+	.sub:hover {
+	color:red;
+	}
+	
+.sp {
+ background-color:white;
+ color:red;
+ }
+ h5 {
+ display:inline-block;
+ font-size:20px;
+ }
+   .wh {
+   display:inline-block;
+   height:8%;
+   }
+    h1 {
+	 margin-top:22px;
+	 padding:4px 4px;
+	 background-color:white;
+	 color:blue;
+	 font-size:40px;
+	 font-family:Times New Roman;
+	 border-radius:23px;
+	 border:8px solid white;
+	 border-top-color:green;
+	 border-bottom-color:aqua;
+	 border-left-color:red;
+	 border-right-color:red;
+	 border-style:outset;
+	 
+	 }
+	 
+ </style> 
+</head>
+<body>
+<script>  
+function chk()
+{  
+var wh=document.myform.who.value;
+var u=document.myform.user.value;  
+var x=document.myform.pass.value; 
+var p=parseInt(x);
+
+
+  if(u=="krishna" && p=="61366136")
+{ 
+  alert("welcome to student library");
+  open("hos.html"); // Redirecting to other page.
+return false;
+} 
+else if (u==null || u=="")
+{  
+  alert("Name can't be blank");  
+ 
+  return false;  
+}
+ else if (p==null || p=="")
+{  
+  alert("password can't be blank");  
+ return false;  
+}
+else if(p.length<6){  
+  alert("Password must be at least 6 characters long.");  
+  return false; 
+  } 
+ else if(p.length>18){  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+  } 
+  
+  
+
+     if(u=="teacher" && p=="12345")
+{ 
+  alert("welcome to jain university");
+  open("college.html"); // Redirecting to other page.
+return false;
+}
+}
+</script> 
+<h1>School of Koding</h1>
+
+
+
+<div class="div1">
+<h2 align="center"><span class="sp">Login to your account</span></h2>
+<form name="myform" method="post" >
+<input type="checkbox" value="s" name="who" class="wh"></input><h5> &nbsp Student</h5> &nbsp <input type="checkbox" value="T" name="who" class="wh"></input><h5> &nbsp Teacher</h5>
+<br><label id="u" align="center" class="uu">User name or Email</label><br><br>
+<input type="text" size="30" name="user" placeholder="eg.krrish_xyz@mail.com"><br><br>
+<label id="u" align="center" class="up">Password</label><br><br>
+<input type="password" size="30" name="pass" placeholder="*************"><br><br>
+<input type="reset" value="Clear">&nbsp 
+<input  class="sub" type="submit" value="Sign up" onclick="chk()" target="_parent" ><br><br>
+<a href="new_admin.html" target="_blank">New Student ?</a>&nbsp &nbsp &nbsp
+<input type="button" onclick="#" value="reset password ?"><hr>
+</form></div>
+</body></html>
