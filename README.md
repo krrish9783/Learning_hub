@@ -13,7 +13,7 @@ Welcome to the Learning Hub project! This repository contains a web application 
 ## Screenshots
 
 ### Student Dashboard
-![Student Dashboard](screenshots/student_dashboard.png)
+![Student Dashboard](screenshots/home.png)
 
 ### Learning Materials
 ![Learning Materials](screenshots/learning_materials.png)
